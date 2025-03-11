@@ -51,9 +51,10 @@ _(Este enlace puede cambiar si el servidor se reinicia)_
 ---
 
 ## 📩 Créditos y Contacto
-Proyecto desarrollado por **Juan D.H.**  
 
-- **GitHub:** [juandh01](https://github.com/juandh01)  
-- **Contacto:** [juandh01@example.com](mailto:juandh01@example.com)  
+Proyecto desarrollado por **Juan Barrientos**  
 
----
+- **GitHub:** [juandh01](https://github.com/juandh01)
+- **Contacto:** [juanbarrientosccopa@gmail.com](mailto:juanbarrientosccopa@gmail.com)
+  
+--
