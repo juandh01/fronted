@@ -29,29 +29,15 @@ git clone https://github.com/juandh01/fronted.git
 
 ### 🌍 Ver el proyecto en línea con NGROK
 Si deseas ver el proyecto en vivo sin descargarlo, puedes acceder a:  
-👉 [https://58d9-38-25-122-7.ngrok-free.app](https://58d9-38-25-122-7.ngrok-free.app)  
+👉 [https://58d9-38-25-122-7.ngrok-free.app]([https://58d9-38-25-122-7.ngrok-free.app](https://58d9-38-25-122-7.ngrok-free.app/fronted/))  
 _(Este enlace puede cambiar si el servidor se reinicia)_
 
 ---
 
-## 🔄 Convención de Commits Usada
-Este proyecto sigue la convención de [Conventional Commits](https://www.conventionalcommits.org/):
-
-- `feat:` Nueva funcionalidad.  
-- `fix:` Corrección de errores.  
-- `style:` Cambios en los estilos CSS.  
-- `docs:` Documentación.  
-- `refactor:` Mejoras en código sin cambiar funcionalidad.  
-
-Ejemplo:  
-```bash
-git commit -m "feat: Implementación de la sección de confianza con logos"
-```
-
 ---
 
 ## 📸 Capturas de Pantalla
-_(Aquí puedes agregar imágenes del proyecto en acción)_
+_
 ![image](https://github.com/user-attachments/assets/60d6ab5c-1c7e-4771-bd57-3ff7a0052b74)
 ![image](https://github.com/user-attachments/assets/6f3894b4-ea6d-40bc-bafa-1485664f16c6)
 ![image](https://github.com/user-attachments/assets/930d1353-b3c2-4e2f-821b-9bf9a4d3838c)
