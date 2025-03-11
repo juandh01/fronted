@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Página</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+<!-- Contenedor Global Header + Hero con fondo compartido -->
+<div class="header-hero-container relative bg-cover bg-center" style="background-image: url('assets/fondo1.png');">
+
+    <!-- HEADER -->
+    <header class="absolute top-0 left-0 w-full z-50 bg-transparent fade-in">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-6 px-6">
+            <!-- Logo -->
+            <a href="#" class="text-purple-700 font-bold text-2xl flex items-center">
+                <img src="assets/logo.svg" alt="Matur.io" class="h-8 mr-2 logo-img "> Matur.io
+            </a>
+
+            <!-- Menú de Navegación -->
+            <nav class="hidden md:flex space-x-6 ">
+                <div class="relative group">
+                    <button class="text-black hover:text-gray-300 font-medium flex items-center dropdown-btn">
+                        Producto <span class="ml-1">▼</span>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica 2</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-black hover:text-gray-300 font-medium flex items-center dropdown-btn">
+                        Servicio <span class="ml-1">▼</span>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-black hover:text-gray-300 font-medium flex items-center dropdown-btn">
+                        Producto <span class="ml-1">▼</span>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-black hover:text-gray-300 font-medium flex items-center dropdown-btn">
+                        Recursos <span class="ml-1">▼</span>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-black hover:text-gray-300 font-medium flex items-center dropdown-btn">
+                        ¿Por que es gratis? <span class="ml-1">▼</span>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible transition-all duration-300">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Característica</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Botones de Acción -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-black font-medium hover:text-gray-300">Iniciar sesión</a>
+                <a href="#" class="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition">Regístrate Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero full-width-section relative flex flex-col items-center text-center bg-cover bg-center min-h-screen pt-32 md:pt-40 fade-in">
+        <div class="content-container relative z-10 max-w-3xl text-white">
+            <h1 class="text-5xl font-bold text-black">Tu respuesta es rápida, los clientes se están acercando</h1>
+            <p class="mt-4 text-lg text-black">Monitorea y chatea con los visitantes de tu sitio web, responde a tickets de soporte, gestiona contactos y proporciona un centro de ayuda que empodera a los clientes para resolver sus propios problemas.</p>
+            <a href="#" class="bg-purple-600 text-bl px-6 py-3 mt-6 rounded-full inline-block text-lg font-medium hover:bg-purple-400 transition">Comienza ahora, es gratis</a>
+        </div>
+
+        <!-- Imagen debajo del botón -->
+        <div class="mt-10 w-full max-w-5xl flex justify-center scroll-reveal-zoom">
+            <img src="assets/hero-image.png" alt="Dashboard preview" class="w-full drop-shadow-xl ">
+        </div>
+    </section>
+
+</div>
+    
+    <!-- SECCIÓN LOGOS DE CONFIANZA -->
+    <section class="trust-section full-width-section ">
+        <div class="content-container">
+            <div class="trust-content scroll-reveal-zoom">
+                <h2>Más de 21,000 agentes de soporte confían en Matur todos los días</h2>
+                <div class="trust-logos">
+                    <img src="assets/logos/cactus.svg" alt="Cactus">
+                    <img src="assets/logos/recharge.svg" alt="Recharge">
+                    <img src="assets/logos/minty.svg" alt="Minty">
+                    <img src="assets/logos/hues.svg" alt="Hues">
+                    <img src="assets/logos/rise.svg" alt="Rise">
+                    <img src="assets/logos/snowflake.svg" alt="Snowflake">
+                    <img src="assets/logos/vision.svg" alt="Vision">
+                    <img src="assets/logos/luminous.svg" alt="Luminous">
+                    <img src="assets/logos/pronature.svg" alt="ProNature">
+                    <img src="assets/logos/trace.svg" alt="Trace">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN WHY MATUR? -->
+    <section class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
+        <!-- Título y descripción -->
+        <div class="text-left">
+            <!-- Etiqueta destacada -->
+            <span class="bg-purple-100 text-purple-600 font-bold py-2 px-4 rounded-full text-sm uppercase mb-4 inline-block">
+                ¿POR QUÉ MATUR?
+            </span>
+    
+            <!-- Título principal -->
+            <h2 class="text-4xl font-bold text-gray-900 ">
+                La razón por la que Matur es la mejor solución de centro de ayuda para hacer crecer un negocio.
+            </h2>
+    
+            <!-- Subtítulo -->
+            <p class="text-gray-600 text-lg mt-2 leading-relaxed">
+                Porque puedes acceder a todo esto, por supuesto, de forma gratuita y sin cobrarte un centavo.
+                ¿Qué estás esperando para obtener respuestas rápidas de tus clientes? ¡Hazlo ahora!
+            </p>
+        </div>
+    
+        <!-- Contenedor de características -->
+        <div class="mt-16 grid md:grid-cols-3 gap-12 text-center">
+            
+            <!-- Opción 1 -->
+            <div class="flex flex-col items-center scroll-reveal-zoom">
+                <img src="assets/icons/get-close.svg" alt="Get Close" class="h-28 mb-4">
+                <h3 class="text-xl font-semibold">Acércate</h3>
+                <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                    Tus clientes tienen preguntas antes de comprar. Esté donde ellos están,
+                    cuando te necesiten, para que tengan la confianza que necesitan para
+                    elegirte sobre la competencia. Siempre.
+                </p>
+            </div>
+    
+            <!-- Opción 2 -->
+            <div class="flex flex-col items-center scroll-reveal-zoom">
+                <img src="assets/icons/get-organized.svg" alt="Get Organized" class="h-28 mb-4">
+                <h3 class="text-xl font-semibold">Organízate</h3>
+                <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                    Con los datos de los clientes dispersos en tantas herramientas, es difícil
+                    obtener una vista general del recorrido del cliente. Pero eso ya no es un
+                    problema. Ahora tienes un solo lugar para todas tus interacciones con los clientes.
+                </p>
+            </div>
+    
+            <!-- Opción 3 -->
+            <div class="flex flex-col items-center scroll-reveal-zoom">
+                <img src="assets/icons/get-in-front.svg" alt="Get in Front" class="h-28 mb-4">
+                <h3 class="text-xl font-semibold">Destácate</h3>
+                <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                    Identifica fácilmente las preguntas frecuentes y captura búsquedas en el centro
+                    de ayuda para crear artículos y accesos directos, de modo que los agentes puedan 
+                    responder más rápido y los clientes puedan obtener ayuda sin necesidad de contacto directo.
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+     <!-- SECCIÓN HOW DOES IT WORK -->
+     <section class="how-it-works scroll-reveal">
+        <div class="content-container">
+            <div class="how-tag">¿CÓMO FUNCIONA?</div>
+            <h2 class="how-title">Una forma práctica y sencilla de trabajar para todos los usuarios</h2>
+            <p class="how-description">Porque puedes acceder a todo esto, por supuesto, de forma gratuita y sin cobrarte un centavo. ¿Qué estás esperando para obtener respuestas rápidas de tus clientes? ¡Hazlo ahora!</p>
+        
+            <div class="how-grid">
+                <div class="how-item scroll-reveal-left">
+                    <h3>Rastrea la actividad de tus clientes en tiempo real</h3>
+                    <ul>
+                        <li>Proporciona información en tiempo real sobre las páginas que visitan los clientes.</li>
+                        <li>Brinda información sobre lo que están buscando.</li>
+                        <li>Rastrea la frecuencia de sus visitas a los sitios web.</li>
+                    </ul>
+                </div>
+                <div class="how-image scroll-reveal-left">
+                    <img src="assets/how/real-time-activity.png" alt="Real-time activity">
+                </div>
+
+                <div class="how-image scroll-reveal-right">
+                    <img src="assets/how/customers-global.png" alt="Customers in foreign countries">
+                </div>
+                <div class="how-item scroll-reveal-right">
+                    <h3>Conéctate con tus clientes dondequiera que estén</h3>
+                    <p>El acceso es la moneda del mundo digital. Debes estar donde están tus clientes, porque si no lo estás, tus competidores sí lo estarán. Con herramientas como chat en vivo, gestión de tickets, una base de conocimientos y complementos de video y voz, tienes todo lo necesario para estar presente cuando y donde tus clientes más te necesiten. </p>
+                </div>
+
+                <div class="how-item scroll-reveal-left">
+                    <h3>Colabora y asigna conversaciones</h3>
+                    <ul>
+                        <li>Las tareas de conversación dejan claro quién es dueño de qué.</li>
+                        <li>Notas internas privadas para que los miembros del equipo colaboren.</li>
+                        <li>Detección de colisiones para evitar respuestas duplicadas y vergonzosas.</li>
+                    </ul>
+                </div>
+                <div class="how-image scroll-reveal-left">
+                    <img src="assets/how/team-assign.png" alt="Team Assign">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- FEATURES SECTION -->
+   <section class="bg-gray-100 flex justify-center items-center py-20 px-10 ">
+    <div class="bg-gray-200 rounded-2xl p-14 max-w-6xl text-center shadow-lg w-full mx-10 scroll-reveal-zoom">
+        <div class="inline-block bg-purple-100 text-purple-600 font-bold py-2 px-4 rounded-full text-sm uppercase mb-5">
+            NUESTRA FUNCIÓN
+        </div>
+        <h2 class="text-4xl font-bold text-gray-900 mb-5">Todas las funciones, sin el precio</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
+            Una plataforma de chat en vivo y comunicación con clientes totalmente personalizable, llena de funciones premium.
+        </p>
+        <a href="#" class="bg-purple-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:bg-purple-400 hover:scale-105 inline-block mb-10">
+            Explora más funciones
+        </a>
+
+        <!-- Slider fila 1 -->
+        <div class="overflow-hidden w-full max-w-5xl mx-auto mb-4">
+            <div class="features-slider flex gap-4">
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/traducir.png" class="w-6 h-6" alt="Icono idiomas">
+                    <span>45+ Lenguajes</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/java.png" class="w-6 h-6" alt="JavaScript API">
+                    <span>JavaScript API</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/publico-objetivo.png" class="w-6 h-6" alt="Group Messaging">
+                    <span>Mensajeria Grupal</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/monitor.png" class="w-6 h-6" alt="Video + Voice">
+                    <span>Video + Voz </span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/comentario.png" class="w-6 h-6" alt="Agent Messaging">
+                    <span>Agente > Mensajería del agente</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider fila 2 -->
+        <div class="overflow-hidden w-full max-w-5xl mx-auto mb-4">
+            <div class="features-slider flex gap-4">
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/monitor.png" class="w-6 h-6" alt="Screen Sharing">
+                    <span>Compartir pantalla</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/caja-de-pc.png" class="w-6 h-6" alt="Desktop Notifications">
+                    <span>Notificaciones de escritorio</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/guino.png" class="w-6 h-6" alt="Emoji">
+                    <span>1880+ Emoji</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/crecimiento.png" class="w-6 h-6" alt="Geo IP Tracking">
+                    <span>Seguimiento geográfico de IP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider fila 3 -->
+        <div class="overflow-hidden w-full max-w-5xl mx-auto mb-4">
+            <div class="features-slider flex gap-4">
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/reloj-con-flecha-circular.png" class="w-6 h-6" alt="Unlimited History">
+                    <span>Historia ilimitada</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/grafico-circular.png" class="w-6 h-6" alt="Track Engagement">
+                    <span>Seguimiento del compromiso</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/barras.png" class="w-6 h-6" alt="Detailed Reporting">
+                    <span>Informes detallados</span>
+                </div>
+                <div class="flex-none w-48 bg-white py-3 px-6 rounded-full text-lg font-medium text-gray-900 shadow-md flex items-center gap-3 justify-center">
+                    <img src="assets/icons/personas.png" class="w-6 h-6" alt="Ban/Unban Visitors">
+                    <span>Prohibir o desprohibir visitantes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+    <!-- SECCIÓN FAQ -->
+
+    <section class="max-w-6xl mx-auto px-6 py-16 scroll-reveal">
+        <!-- Título y descripción -->
+        <div class="text-left md:text-left mb-10">
+            <span class="bg-purple-100 text-purple-600 font-bold py-2 px-4 rounded-full text-sm uppercase mb-4 inline-block">
+                FAQ
+            </span>
+            <h2 class="text-4xl font-bold text-gray-900">PREGUNTAS FRECUENTES</h2>
+            <p class="text-gray-600 text-lg mt-2">
+                Hagamos nuestro mejor esfuerzo para responder tus preguntas más frecuentes.
+            </p>
+        </div>
+    
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Caja de contacto con imagen -->
+            <div class="relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col justify-between h-[230px]">
+                <div class="flex items-center space-x-4">
+                    <!-- Imagen en lugar del ícono -->
+                    <img src="assets/question.svg" alt="Help Icon" class="w-12 h-12">
+
+                    <div>
+                        <h3 class="text-lg font-bold">¿Aún tienes preguntas?</h3>
+                        <p class="text-gray-500 text-sm">
+                            ¿No encuentras la respuesta que buscas? Chatea con nuestro amable equipo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Botón -->
+                <a href="#" class="block bg-purple-600 text-white text-center py-3 px-6 rounded-lg font-medium transition hover:bg-purple-400">
+                    Ponte en contacto
+              </a>
+            </div>
+
+    
+            <!-- FAQ (Acordeón) -->
+            <div class="space-y-4">
+                <div x-data="{ open: true }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Cuántos agentes podemos agregar?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                        No hay límites en la cantidad de agentes que puedes agregar a una propiedad. tawk.to es una aplicación de chat centrada en agentes, lo que significa que cada agente tiene su propia cuenta y puedes compartir propiedades.
+                    </div>
+                </div>
+    
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Hay anuncios?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                        
+                    </div>
+                </div>
+    
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Cómo pueden ofrecer esto gratis?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                       
+                    </div>
+                </div>
+    
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Limitan el número de chats simultáneos?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                       
+                    </div>
+                </div>
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Alguna vez tendré que pagar por usar el software?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                       
+                    </div>
+                </div>
+
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Dónde puedo encontrar documentación?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                       
+                    </div>
+                </div>
+
+                <div x-data="{ open: false }" class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <button @click="open = !open" class="w-full flex justify-between items-center p-4 text-lg font-medium">
+                        <span>¿Ofrecen una solución autohospedada?</span>
+                        <span x-show="open">➖</span>
+                        <span x-show="!open">➕</span>
+                    </button>
+                    <div x-show="open" class="p-4 text-gray-600">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Incluir Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x/dist/cdn.min.js" defer></script>
+    
+    
+
+        <!-- SECCIÓN TESTIMONIAL -->
+    
+        <section class="testimonial-section scroll-reveal">
+            <div class="testimonial-container">
+                <!-- Etiqueta -->
+                <div class="testimonial-tag">TESTIMONIO</div>
+                
+                <!-- Título y descripción -->
+                <h2 class="testimonial-title">Confían en Nosotros para la Atención al Cliente</h2>
+                <p class="testimonial-description">
+                    Hagamos nuestro mejor esfuerzo para responder tus preguntas más frecuentes.
+                </p>
+        
+                <!-- Contenedor del carrusel -->
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <!-- Tarjeta 1 -->
+                        <div class="testimonial-card">
+                            <img src="assets/testimonials/user1.jpg" alt="Usuario 1" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                Usar la función de chat de soporte en este sitio web cambió las reglas del juego para mí. 
+                                El tiempo de respuesta fue rapidísimo y el equipo de soporte fue increíblemente 
+                                conocedor y servicial.
+                            </p>
+                            <p class="testimonial-name">Ilyas Pratama</p>
+                            <p class="testimonial-role">Co-Fundador de Futuristix</p>
+                        </div>
+        
+                        <!-- Tarjeta 2 -->
+                        <div class="testimonial-card">
+                            <img src="assets/testimonials/user2.jpg" alt="Usuario 2" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                No puedo expresar lo impresionado que estoy con el soporte por chat en este sitio web. 
+                                El equipo de soporte está disponible 24/7, y cada vez que los he contactado, 
+                                han sido rápidos, profesionales y amables.
+                            </p>
+                            <p class="testimonial-name">Ilyas Pratama</p>
+                            <p class="testimonial-role">Co-Fundador de Amoeba</p>
+                        </div>
+        
+                        <!-- Tarjeta 3 -->
+                        <div class="testimonial-card">
+                            <img src="assets/testimonials/user3.jpg" alt="Usuario 3" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                Recientemente encontré un fallo técnico mientras usaba este sitio web, 
+                                e inmediatamente contacté el soporte por chat. El agente con el que hablé 
+                                no solo era experto, sino también empático.
+                            </p>
+                            <p class="testimonial-name">Ilyas Pratama</p>
+                            <p class="testimonial-role">Fundador de Exco</p>
+                        </div>
+        
+                        <!-- Tarjeta 4 -->
+                        <div class="testimonial-card">
+                            <img src="assets/testimonials/user4.jpg" alt="Usuario 4" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                El soporte por chat en este sitio web es excepcional. Siempre que tengo una pregunta 
+                                o necesito ayuda, sé que puedo confiar en su equipo. Tienen un profundo conocimiento 
+                                de su producto y servicios.
+                            </p>
+                            <p class="testimonial-name">Ilyas Pratama</p>
+                            <p class="testimonial-role">Marketing Digital</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Botones de navegación -->
+                <div class="testimonial-controls">
+                    <button id="prevTestimonial" class="testimonial-btn">&#10094;</button>
+                    <button id="nextTestimonial" class="testimonial-btn">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        
+
+<!-- Sección CTA -->
+<section class="cta-section">
+    <div class="cta-content scroll-reveal-zoom">
+        <h2>¡Acércate a tus clientes!<br>¡Activa Matur ahora y aumenta la interacción en tiempo real!</h2>
+        <a href="#" class="cta-button">Comienza ahora, es gratis</a>
+        <p class="cta-subtext">Todo 100% gratis – ¿No nos crees? <a href="#">Lee por qué</a></p>
+    </div>
+
+    <!-- Iconos de plataformas -->
+    <div class="cta-icons">
+        <img src="assets/icons/web-svgrepo-com.svg" alt="Web" class="cta-icon cta-icon-web">
+        <img src="assets/icons/apple.svg" alt="Apple" class="cta-icon cta-icon-apple">
+        <img src="assets/icons/android.svg" alt="Android" class="cta-icon cta-icon-android">
+        <img src="assets/icons/windows-svgrepo-com.svg" alt="Windows" class="cta-icon cta-icon-windows">
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Matur.io</h3>
+            <p>Monitorea y chatea con los visitantes de tu sitio web, responde a tickets de soporte, gestiona contactos y proporciona un centro de ayuda que empodera a los clientes para resolver sus propios problemas.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#">Chat en Vivo</a></li>
+                    <li><a href="#">Páginas de Chat</a></li>
+                    <li><a href="#">Base de Conocimientos</a></li>
+                    <li><a href="#">Un CRM gratuito</a></li>
+                    <li><a href="#">Asistencia con IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Desarrolladores</a></li>
+                    <li><a href="#">Estado</a></li>
+                    <li><a href="#">Academia</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Acerca de</h4>
+                <ul>
+                    <li><a href="#">¿Por qué gratis?</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Socios</a></li>
+                    <li><a href="#">Casos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Contratar Agentes de Chat</a></li>
+                    <li><a href="#">Contratar un Asistente Virtual</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Copyright 2023 matur.io, inc. Todos los derechos reservados. Varias marcas registradas pertenecen a sus respectivos propietarios.</p>
+        <div class="footer-legal">
+            <a href="#">Privacidad y Términos</a>
+            <a href="#">Reportar Abuso</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+  
+        
+    </div>
+    <script src="js/faq.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/fade-in.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+
+
+
+</body>
+</html>
