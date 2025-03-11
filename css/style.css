@@ -1,0 +1,1107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #141414;
+    line-height: 1.6;
+}
+/* Contenedor global para Header + Hero con fondo compartido */
+.header-hero-container {
+    background: url('../assets/fondo_Mesa\ de\ trabajo\ 1.png \(1\).png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* Secciones con fondo completo */
+.full-width-section {
+    width: 100vw;
+    padding: 80px 0;
+    position: relative;
+}
+
+/* Contenedor del contenido limitado */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER - Navbar */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    background: transparent; /* Fondo transparente */
+}
+
+/* Logo */
+.header a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav button {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav button:hover {
+    color: #ffd6ff;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 180px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.group:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #141414;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background: #f3f3f3;
+}
+
+/* Botón de Login */
+.header a.text-white {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header a.text-white:hover {
+    color: #ffd6ff;
+}
+
+/* Botón Sign Up Free */
+.header a.bg-black {
+    background-color: black;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.header a.bg-black:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 180px 10% 100px;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Botón CTA */
+.hero .btn-primary {
+    background-color: #6233FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px #0000001a;
+}
+
+.hero .btn-primary:hover {
+    background-color: #fd8bff;
+    transform: scale(1.05);
+}
+
+
+/* SECCIÓN LOGOS DE CONFIANZA */
+.trust-section {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 80px 10%;
+    min-height: 300px;
+
+
+}
+.trust-section .content-container {
+    text-align: center;
+}
+
+.trust-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 30px;
+}
+
+.trust-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Fija 5 logos por fila */
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.trust-logos img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(1) contrast(1);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.trust-logos img:hover {
+    opacity: 1;
+}
+
+/* SECCIÓN WHY MATUR? */
+.why-matur {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.why-tag-section {
+    width: 100%;
+    padding: 20px 0;
+    background: #FFFFFF; /* Fondo blanco */
+}
+
+
+.why-tag-section .content-container {
+    display: flex; /* Usa flexbox para alinear correctamente */
+    justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+.why-tag {
+    display: inline-block;
+    background: #E9DCFA;
+    color: #6233FF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content; /* Se ajusta al tamaño del texto */
+}
+
+.why-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.why-description {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.why-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.why-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.why-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.why-item h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* SECCIÓN HOW DOES IT WORK? */
+.how-it-works {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.how-tag {
+    display: inline-block;
+    background: #E9DCFA;
+    color: #6233FF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.how-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.how-description {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.how-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.how-item {
+    text-align: left;
+    max-width: 500px;
+}
+
+.how-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.how-item p, .how-item ul {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.how-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.how-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features-section {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+.features-container {
+    background: rgb(236, 234, 234);
+    border-radius: 20px;
+    padding: 60px;
+    max-width: 1100px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-tag {
+    display: inline-block;
+    background: #E9DCFA;
+    color: #6233FF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.features-description {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.features-container .btn-primary {
+    background-color: #6233FF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.features-container .btn-primary:hover {
+    background-color: #fd8bff;
+    transform: scale(1.05);
+}
+
+/* Slider de features */
+.features-slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.features-slider {
+    display: flex;
+    gap: 15px;
+    animation: slideLeft 10s linear infinite;
+    width: calc(250px * 10); /* Ajustar según la cantidad de elementos */
+}
+
+.feature-item {
+    flex: 0 0 auto;
+    width: 200px;
+    background: #ffffff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #141414;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 900px) {
+    .features-slider {
+        animation-duration: 15s;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-slider {
+        animation-duration: 20s;
+    }
+}
+
+
+/* SECCIÓN FAQ */
+.faq-section {
+    background-color: #ffffff;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-container {
+    max-width: 1100px;
+    text-align: left;
+}
+
+.faq-tag {
+    display: inline-block;
+    background: #E9DCFA;
+    color: #6233FF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.faq-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.faq-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.faq-help-box {
+    background: linear-gradient(180deg, rgba(250, 240, 255, 0.6) 0%, rgba(240, 225, 255, 0.3) 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(150, 100, 200, 0.2);
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    backdrop-filter: blur(15px);
+}
+
+.faq-help-icon {
+    flex-shrink: 0;
+}
+
+.faq-help-icon img {
+    width: 50px;
+}
+
+.faq-help-text {
+    flex: 1;
+}
+
+.faq-help-text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #141414;
+}
+
+.faq-help-text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.faq-help-box .btn-primary {
+    background-color: #6233FF;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-help-box .btn-primary:hover {
+    background-color: #fd8bff;
+    transform: scale(1.05);
+}
+
+.faq-list {
+    flex: 1;
+}
+
+.faq-item {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6233FF;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #666;
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* SECCIÓN TESTIMONIAL */
+.testimonial-section {
+    background-color: #ffffff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.testimonial-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Etiqueta "TESTIMONIAL" */
+.testimonial-tag {
+    display: inline-block;
+    background: #E9DCFA;
+    color: #6233FF;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Título y descripción */
+.testimonial-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.testimonial-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Contenedor del carrusel */
+.testimonial-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Track que contiene las tarjetas */
+.testimonial-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Tarjetas individuales */
+.testimonial-card {
+    min-width: calc(100% / 3);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Imagen de usuario */
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Texto del testimonio */
+.testimonial-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Nombre y rol */
+.testimonial-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #141414;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Botones de navegación */
+.testimonial-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial-btn {
+    background: #6233FF;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.testimonial-btn:hover {
+    background: #fd8bff;
+}
+
+
+@media (max-width: 900px) {
+    .testimonial-card {
+        min-width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-card {
+        min-width: 100%;
+    }
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .trust-content h2 {
+        font-size: 2.2rem;
+    }
+    .trust-logos {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .why-title {
+        font-size: 2rem;
+    }
+    .why-description {
+        font-size: 1rem;
+    }
+    .why-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .why-item {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .how-grid {
+        grid-template-columns: 1fr;
+    }
+    .how-item, .how-image {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .features-container {
+        padding: 40px;
+    }
+
+    .features-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+    }
+    .faq-help-box {
+        max-width: 100%;
+    }
+}
+
+/* CTA Section */
+.cta-section {
+    position: relative;
+    background: url('../assets/fondo2.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+}
+
+/* Contenido del CTA */
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+.cta-subtext {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.cta-subtext a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Íconos en los lados */
+.cta-icons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
+}
+
+.cta-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.cta-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste de posición específica de cada icono */
+.cta-icon-web {
+    position: absolute;
+    left: 10%;
+    top: -60px; /* Mayor separación */
+}
+
+.cta-icon-apple {
+    position: absolute;
+    left: 12%;
+    bottom: -60px; /* Mayor separación */
+}
+
+.cta-icon-windows {
+    position: absolute;
+    right: 12%;
+    bottom: -60px; /* Mayor separación */
+}
+
+.cta-icon-android {
+    position: absolute;
+    right: 10%;
+    top: -60px; /* Mayor separación */
+}
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #120f1d;
+    color: white;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo {
+    max-width: 350px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-column ul li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-legal a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-legal a:hover {
+    opacity: 1;
+}
+.text-black {
+    color: black !important;
+}
+.logo-img {
+    filter: invert(15%) sepia(100%) saturate(1500%) hue-rotate(245deg) brightness(80%) contrast(120%);
+}
+
+/* Ocultar los elementos antes de que se cargue la página */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza un poco abajo */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cuando se agrega la clase .visible, los elementos aparecen */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ocultar elementos antes de que aparezcan en pantalla */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px); /* Empieza un poco más abajo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Cuando el elemento entra en la vista, aparece */
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-reveal-left {
+    opacity: 0 !important;
+    transform: translateX(-50px) !important;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out !important;
+}
+.scroll-reveal-left.visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(50px); /* Se mueve desde la derecha */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.scroll-reveal-zoom {
+    opacity: 0 !important;
+    transform: scale(0.9) !important;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out !important;
+}
+.scroll-reveal-zoom.visible {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
