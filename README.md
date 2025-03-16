@@ -27,10 +27,13 @@ git clone https://github.com/juandh01/fronted.git
    ```
 2. Abre `index.html` en tu navegador.
 
-### 🌍 Ver el proyecto en línea con NGROK
+## 🚀 Ver el proyecto en línea
+
 Si deseas ver el proyecto en vivo sin descargarlo, puedes acceder a:  
-👉 [[[https://58d9-38-25-122-7.ngrok-free.app](https://juandh01.github.io/fronted/)](https://58d9-38-25-122-7.ngrok-free.app/fronted/)]
-_(Este enlace puede cambiar si el servidor se reinicia)_
+👉 [https://juandh01.github.io/fronted/](https://juandh01.github.io/fronted/)
+
+_(Este enlace es permanente y no cambia con reinicios)_
+
 
 
 
